@@ -6,12 +6,16 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Debug (Launch) with Arguments Prompt",
+            "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "stopOnEntry": false,
-            "mainClass": "sandbox",
-            "args": "",
-            },
-          },
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "HelloWorld"
+        }
     ]
 }
