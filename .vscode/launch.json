@@ -8,14 +8,16 @@
             "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
-            "mainClass": "${file}"
+            "mainClass": "${file}",
+            "args": ""
         },
         {
             "type": "java",
             "name": "Debug (Launch)-HelloWorld",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "HelloWorld"
+            "mainClass": "HelloWorld",
+            "args": ""
         }
     ]
 }
